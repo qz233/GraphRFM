@@ -1,0 +1,21 @@
+# global specification 
+device: cuda:6
+task: emb
+suffix: demo    # for identifying each experiment
+
+# dataset
+dataset: arxiv
+dataset_path: /data/haoyun/graphrfm/datasets
+
+# model setup
+gnn_model: gcn
+hidden_dim: 256
+num_layers: 4
+dropout_rate: 0.5
+
+# training setup
+lr: 1e-3
+epoches: 500
+print_freq: 20
+output_dir: /data/haoyun/graphrfm/model_cache
+
